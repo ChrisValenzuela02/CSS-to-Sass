@@ -1,0 +1,13 @@
+<svg width="274" height="73" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <path stroke="#000" id="svg_1" d="m227.415775,72.749982l9.066819,-9.60019l36.267393,-2.400052l-45.334211,12.000242l-226.665781,0l0,-71.999987l272.000002,0l0,59.999747" stroke-width="1.5" fill="#c0c0c0"/>
+  <path id="svg_3" d="m20.190785,26.275151l0,0l0,-0.004053l0,0.004053zm0.002434,-0.004053l14.049339,11.699557l-14.051774,11.695504l5.16595,4.30247l19.217724,-16.000001l-19.217724,-16.000001l-5.163516,4.30247zm24.894913,27.405701l35.102655,0l0,-6.077771l-35.102655,0l0,6.077771zm10.553437,-12.666245l24.549218,0l0,-6.077771l-24.549218,0l0,6.077771zm-10.553437,-18.746043l0,6.081824l35.102655,0l0,-6.081824l-35.102655,0z" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
+  <text style="cursor: move;" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="26" id="svg_4" y="44.678959" x="110.669785" stroke-opacity="null" stroke-width="0" fill="#ffffff">Toggle Menu</text>
+ </g>
+</svg>

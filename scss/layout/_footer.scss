@@ -1,0 +1,30 @@
+  footer{
+    background: $lightgrey;
+  
+      & .contact-info{
+        @extend %flex-display;
+        @extend %flex-column;
+        align-items: center;
+    }
+  }
+  
+  .footer-nav{
+    @extend %flex-display;
+    @include setPadding(15px, 10px, 15px, 10px);
+    justify-content: space-between;
+    font-weight: $font-bold;
+  
+    & a:hover{
+      color: $lightergrey;
+    }
+  }
+    .footer-links{
+      @include breakPoint(mobile){
+        display: none;
+      }
+      @include breakPoint(tablet){
+        display: flex;
+        @include setMargin($left:5px, $right: 5px);
+      }
+
+    }  

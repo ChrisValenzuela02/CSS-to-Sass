@@ -1,0 +1,34 @@
+/*Global Styles*/
+
+*{
+  box-sizing: border-box;
+}
+ 
+li{
+    list-style: none;
+  }
+
+a{
+  text-decoration: none;
+}
+
+body{
+  @extend %flex-display;
+  @extend %flex-column;
+  min-height: 100vh;
+}
+
+.main-content img{
+  @include setWidth(90%);
+}
+
+@include breakPoint(tablet){
+
+  .name{
+    margin-right: auto;  
+  }
+  
+  .to-top{
+    display: none;
+  }
+}

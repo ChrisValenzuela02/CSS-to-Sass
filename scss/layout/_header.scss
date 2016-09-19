@@ -1,0 +1,116 @@
+header{
+    @extend %flex-display;
+    @extend %flex-column;
+    background: $lightgrey;
+    @include setMargin($bottom: 25px);
+  }
+
+.header-links{
+  @include breakPoint(mobile){
+    display: none;
+  }
+  
+  @include breakPoint(desktop){
+    display: flex;
+  }
+}
+
+.header-nav{ 
+
+  @include breakPoint(mobile){
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @include breakPoint(tablet){
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+  
+  @include breakPoint(desktop){
+    align-self: auto;
+  }
+  
+  & a{
+    color: inherit;
+    font-weight: $font-bold;
+    
+    @include breakPoint(mobile){
+      @include setMargin($top: 7px, $bottom: 7px);  
+      @include setPadding($top:3px, $bottom: 3px);
+      height: 25px;
+      background: $lightergrey;
+    }
+  
+    @include breakPoint(tablet){  
+      margin: auto;
+      background: lightgrey;
+    }
+  @include breakPoint(desktop){
+    @include setMargin(30px, 20px, 30px, 20px);
+    background: lightgrey;
+    }
+  }
+  
+  & a:not(#Home):hover{
+    color: $offwhite;  
+  }
+  
+  & h1{
+    @include breakPoint(tablet){  
+      @include setWidth(100%);
+    }
+    
+    @include breakPoint(desktop){
+      @include setWidth(auto);
+      margin-right: auto;
+      @include setPadding($left: 120px);
+    }
+  }
+}
+
+
+.header-bio{
+
+    @include breakPoint(mobile){
+      display: flex;
+      flex-direction: column;
+    }
+  
+    @include breakPoint(tablet){  
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+  
+  & img{
+    @extend %auto-margin;
+  
+    @include breakPoint(mobile){
+      @include setWidth(75%);
+      @include setPadding($top:15px);
+    }
+  
+    @include breakPoint(tablet){  
+      @include setWidth(40%);
+      @include setPadding(20px, 30px, 20px, 30px);
+    }
+  }
+
+    & p{  
+      align-self:flex-start;
+  
+    @include breakPoint(mobile){
+      @include setPadding($left:50px, $right:50px);
+    }
+  
+    @include breakPoint(tablet){
+      padding: 50px;
+    }
+  
+    @include breakPoint(desktop){
+      font-size: $font-size-p;
+    }  
+  }
+}

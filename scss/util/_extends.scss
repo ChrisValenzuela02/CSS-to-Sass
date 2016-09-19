@@ -1,0 +1,13 @@
+/* Display extends */
+
+%flex-display {
+  display: flex;
+}
+
+%flex-column{
+  flex-direction: column;  
+}
+
+%auto-margin{
+  margin: auto;
+}

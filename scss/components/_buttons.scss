@@ -1,0 +1,13 @@
+.nav-svg{
+  @include setWidth(35%);
+  height: 30px;
+  @include setMargin(5px, auto, 15px, auto);
+  
+  @include breakPoint(tablet){
+    @include setWidth(100%);
+  }
+  
+  @include breakPoint(desktop){
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+@mixin breakPoint($point){
+  
+  @if $point == mobile{
+    @media #{$brk-mobile}{@content;}
+  }
+  @else if $point == tablet{
+    @media #{$brk-tablet}{@content;}
+  }
+  @else if $point == desktop{
+    @media #{$brk-desktop}{@content;}
+  }
+  
+}
+
+@mixin setMargin($top: 0, $right: 0, $bottom: 0, $left: 0){
+  margin: $top $right $bottom $left;
+}
+        
+@mixin setWidth($width){
+  width: $width;
+}
+
+@mixin setPadding($top: 0, $right: 0, $bottom: 0, $left: 0){
+  padding: $top $right $bottom $left;      
+}
